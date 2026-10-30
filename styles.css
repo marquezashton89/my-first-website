@@ -1,133 +1,256 @@
-body {
-margin: 0;
-padding: 0;
-font-family: "Comic Sans MS", "Trebuchet MS", cursive;
-line-height: 1.6;
-color: #f5c542;
-background-color: #000000;
-}
-#site-header {
-max-width: 900px;
-margin: 20px auto;
-padding: 25px;
-color: #f5c542;
-text-align: center;
-background-color: #000000;
-border: 3px solid #f5c542;
-border-radius: 18px;
-box-shadow: 0 0 12px #f5c542;
-}
-h1 {
-margin: 0;
-padding: 10px;
-font-size: 2.5rem;
-letter-spacing: 2px;
+/* Makes padding and borders part of each element's total width */
+* {
+  box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Trebuchet MS", cursive;
+  line-height: 1.6;
+  color: #f5c542;
+  background-color: #000000;
+}
+
+/* Shared responsive width */
+#site-header,
+.main-nav,
+main {
+  width: calc(100% - 32px);
+  max-width: 1100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header */
+#site-header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 25px;
+  text-align: center;
+  border: 3px solid #f5c542;
+  border-radius: 18px;
+  box-shadow: 0 0 12px #f5c542;
+}
+
+h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: clamp(2rem, 6vw, 3rem);
+  letter-spacing: 2px;
+}
+
+/* Flexbox navigation */
 .main-nav {
-max-width: 900px;
-margin: 20px auto;
-padding: 15px;
-text-align: center;
-background-color: #000000;
-border: 3px solid #f5c542;
-border-radius: 18px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  padding: 15px;
+  text-align: center;
+  border: 3px solid #f5c542;
+  border-radius: 18px;
 }
+
 .main-nav ul {
-margin: 0;
-padding: 0;
-list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .main-nav li {
-display: inline-block;
-margin: 5px 10px;
+  margin: 0;
 }
+
 .main-nav a {
-display: inline-block;
-padding: 8px 14px;
-color: #f5c542;
-font-weight: bold;
-text-decoration: none;
-border: 2px solid #f5c542;
-border-radius: 12px;
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  color: #f5c542;
+  font-weight: bold;
+  text-decoration: none;
+  border: 2px solid #f5c542;
+  border-radius: 12px;
+  transition: color 0.3s, background-color 0.3s;
 }
-.main-nav a:hover {
-color: #000000;
-background-color: #f5c542;
+
+.main-nav a:hover,
+.main-nav a:focus {
+  color: #000000;
+  background-color: #f5c542;
+}
+
+/* Main page layout */
+main {
+  margin-bottom: 35px;
+}
+
+section {
+  min-width: 0;
+  margin-bottom: 25px;
+  padding: 20px;
+  color: #f5c542;
+  background-color: #000000;
+  border: 3px solid #f5c542;
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(245, 197, 66, 0.5);
 }
 
 .intro-section {
-box-shadow: 0 0 12px #f5c542;
+  box-shadow: 0 0 12px #f5c542;
 }
 
-section {
-max-width: 850px;
-margin: 25px auto;
-padding: 25px;
-color: #f5c542;
-background-color: #000000;
-border: 3px solid #f5c542;
-border-radius: 18px;
-box-shadow: 0 0 10px rgba(245, 197, 66, 0.5);
-}
 section h2,
 section h3 {
-margin-top: 0;
-padding: 10px;
-color: #f5c542;
-text-align: center;
-border: 2px solid #f5c542;
-border-radius: 12px;
-}
-section h3 {
-font-size: 1.3rem;
-}
-img {
-display: block;
-width: 170px;
-height: auto;
-margin: 20px auto;
-padding: 6px;
-border: 4px solid #f5c542;
-border-radius: 50%;
-}
-p {
-margin: 15px 0;
-padding: 12px;
-color: #f5c542;
-border: 2px solid #f5c542;
-border-radius: 12px;
-}
-section ul {
-margin: 15px 0;
-padding: 15px 30px;
-color: #f5c542;
-border: 2px solid #f5c542;
-border-radius: 12px;
-}
-section li {
-margin: 8px 0;
-}
-footer {
-margin-top: 35px;
-padding: 20px;
-color: #f5c542;
-text-align: center;
-background-color: #000000;
-border-top: 3px solid #f5c542;
-}
-@media (max-width: 600px) {
-.main-nav li {
-display: block;
-margin: 10px 0;
-}
-.intro-section,
-section {
-margin: 20px 12px;
-padding: 18px;
-}
-h1 {
-font-size: 2rem;
-}
+  margin-top: 0;
+  padding: 10px;
+  color: #f5c542;
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 2px solid #f5c542;
+  border-radius: 12px;
 }
 
+section h3 {
+  font-size: 1.3rem;
+}
+
+/* Intro content begins as one column */
+.intro-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+img {
+  display: block;
+  width: 170px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 6px;
+  border: 4px solid #f5c542;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0;
+  padding: 12px;
+  overflow-wrap: break-word;
+  border: 2px solid #f5c542;
+  border-radius: 12px;
+}
+
+/* Project and Highlights sections begin in one column */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+}
+
+.content-grid section {
+  margin-bottom: 0;
+}
+
+section ul {
+  margin: 15px 0 0;
+  padding: 15px 15px 15px 38px;
+  color: #f5c542;
+  overflow-wrap: break-word;
+  border: 2px solid #f5c542;
+  border-radius: 12px;
+}
+
+section li {
+  margin: 8px 0;
+}
+
+/* Footer */
+footer {
+  padding: 20px 16px;
+  color: #f5c542;
+  text-align: center;
+  border-top: 3px solid #f5c542;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Tablet and desktop layout */
+@media (min-width: 768px) {
+  .main-nav ul {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main-nav a {
+    width: auto;
+    min-width: 120px;
+  }
+
+  .intro-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+
+  .content-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  section {
+    padding: 25px;
+  }
+}
+
+/* Larger desktop adjustments */
+@media (min-width: 1200px) {
+  #site-header,
+  .main-nav,
+  main {
+    width: 1100px;
+  }
+
+  .intro-layout {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  img {
+    width: 200px;
+  }
+}
+
+/* Extra-small mobile adjustments */
+@media (max-width: 400px) {
+  #site-header,
+  .main-nav,
+  main {
+    width: calc(100% - 20px);
+  }
+
+  #site-header,
+  section {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  section h2 {
+    font-size: 1.35rem;
+  }
+
+  section h3 {
+    font-size: 1.1rem;
+  }
+}
