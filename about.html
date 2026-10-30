@@ -3,14 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Ashton Marquez | About</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
+  <header id="site-header">
     <h1>Ashton Marquez</h1>
   </header>
 
-  <nav>
+  <nav class="main-nav" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
@@ -19,31 +29,111 @@
   </nav>
 
   <main>
-    <section>
+    <section class="intro-section">
       <h2>About Me</h2>
-      <img src="images/ashton.jpg" alt="a photo of me with a monkey" width="170">
-      <p>
-        My name is Ashton. I was born and raised in Odessa, Texas. I enjoy learning new things,
-        expressing myself creatively, and building a successful future for myself and my daughter.
-        I love spending time with my family, exploring my interests in IT, cybersecurity, and personal growth.
-      </p>
+
+      <div class="intro-layout">
+        <img
+          src="images/ashton.jpg"
+          alt="Ashton posing with a monkey"
+          width="170"
+        >
+
+        <p>
+          My name is Ashton. I was born and raised in Odessa, Texas. I enjoy
+          learning new things, expressing myself creatively, and building a
+          successful future for myself and my daughter. I love spending time
+          with my family and exploring my interests in IT, cybersecurity, and
+          personal growth.
+        </p>
+      </div>
     </section>
 
-    <section>
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML Basics</li>
-        <li>Creative Expression</li>
-        <li>Command Line Tools</li>
-      </ul>
-    </section>
+    <div class="content-grid">
+      <section>
+        <h2>My Hobbies</h2>
 
-    <section>
-      <h2>Contact</h2>
-      <p>Email: ashtonmarquez1999@gmail.com</p>
-      <p>LinkedIn: https://www.linkedin.com/in/ashton-marquez-547959431/</p>
-      <p>GitHub: https://github.com/marquezashton89</p>
-    </section>
+        <h3>Singing and Music</h3>
+        <p>
+          Singing is one of my favorite hobbies. I enjoy listening to and
+          singing different genres because each one creates a unique feeling.
+        </p>
+
+        <h3>Reading</h3>
+        <p>
+          I enjoy reading fantasy and mystical stories with imaginative worlds
+          and mysterious characters.
+        </p>
+
+        <ul>
+          <li>Fantasy novels</li>
+          <li>Mystical stories</li>
+          <li>Imaginative worlds</li>
+          <li>Mysterious characters</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>My Life Goals</h2>
+
+        <p>
+          I want to continue growing, build a stable future, and create a
+          career that uses my skills and interests. Supporting my family and
+          achieving personal goals is important to me.
+        </p>
+
+        <ol>
+          <li>Continue my education</li>
+          <li>Build a successful career</li>
+          <li>Create a stable future</li>
+          <li>Develop creativity and confidence</li>
+          <li>Support the people I love</li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+
+        <ul>
+          <li>HTML Basics</li>
+          <li>Creative Expression</li>
+          <li>Command Line Tools</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+
+        <p>
+          Email:
+          <a href="mailto:ashtonmarquez1999@gmail.com">
+            ashtonmarquez1999@gmail.com
+          </a>
+        </p>
+
+        <p>
+          LinkedIn:
+          <a
+            href="https://www.linkedin.com/in/ashton-marquez-547959431/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ashton Marquez
+          </a>
+        </p>
+
+        <p>
+          GitHub:
+          <a
+            href="https://github.com/marquezashton89"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            marquezashton89
+          </a>
+        </p>
+      </section>
+    </div>
   </main>
 
   <footer>
