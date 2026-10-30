@@ -4,13 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ashton Marquez | Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header>
+  <header id="site-header">
     <h1>Ashton Marquez</h1>
   </header>
 
-  <nav>
+  <nav class="main-nav" aria-label="Main navigation">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="projects.html">Projects</a></li>
@@ -19,34 +24,39 @@
   </nav>
 
   <main>
-    <section>
+    <section class="intro-section">
       <h2>Projects</h2>
+      <p>
+        These projects show the skills I am developing in HTML, CSS, JavaScript,
+        responsive design, and website organization.
+      </p>
+    </section>
 
-      <article>
+    <div class="content-grid">
+      <section>
         <h3>Personal HTML About Me Page</h3>
         <p>
-          A multi-section webpage introducing myself, my hobbies, and my goals using semantic HTML
-          and basic structure.
+          A multi-section webpage introducing myself, my hobbies, and my goals
+          using semantic HTML and basic structure.
         </p>
-      </article>
+      </section>
 
-      <article>
+      <section>
         <h3>Beginner Website Layout Practice</h3>
         <p>
-          Practicing how to build a simple multi-page website using HTML for structure and CSS for
-          layout and styling.
+          Practicing how to build a simple multi-page website using HTML for
+          structure and CSS for layout and styling.
         </p>
-      </article>
+      </section>
 
-      <article>
-        <h3>Intro to JavaScript Interactivity</h3>
+      <section>
+        <h3>Introduction to JavaScript Interactivity</h3>
         <p>
-          Learning how JavaScript adds interactivity to a webpage, including buttons, simple
-          functions, and dynamic text changes.
+          Learning how JavaScript adds interactivity to a webpage, including
+          buttons, simple functions, and dynamic text changes.
         </p>
-      </article>
-
-    </section>
+      </section>
+    </div>
   </main>
 
   <footer>
