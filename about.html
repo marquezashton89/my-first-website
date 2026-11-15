@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Ashton Marquez | About</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -91,7 +89,6 @@
 
       <section>
         <h2>Skills</h2>
-
         <ul>
           <li>HTML Basics</li>
           <li>Creative Expression</li>
@@ -130,6 +127,85 @@
             marquezashton89
           </a>
         </p>
+
+        <h3>Send Me a Message</h3>
+        <p id="form-help">
+          Fields marked required must be completed. Error messages appear when
+          a required field is left empty or entered incorrectly.
+        </p>
+
+        <form action="mailto:ashtonmarquez1999@gmail.com" method="post" enctype="text/plain">
+          <div class="form-field">
+            <label for="name">Your name <span>(required)</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+              aria-describedby="name-error"
+            >
+            <p class="error" id="name-error">
+              Please enter your name.
+            </p>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email address <span>(required)</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+              aria-describedby="email-error"
+            >
+            <p class="error" id="email-error">
+              Please enter a valid email address, such as name@example.com.
+            </p>
+          </div>
+
+          <fieldset>
+            <legend>How would you like me to reply?</legend>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="reply-email"
+                name="reply-preference"
+                value="email"
+                checked
+              >
+              <label for="reply-email">Email</label>
+            </div>
+
+            <div class="choice">
+              <input
+                type="radio"
+                id="reply-other"
+                name="reply-preference"
+                value="other"
+              >
+              <label for="reply-other">Another way</label>
+            </div>
+          </fieldset>
+
+          <div class="form-field">
+            <label for="message">Message <span>(required)</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              aria-describedby="message-error"
+            ></textarea>
+            <p class="error" id="message-error">
+              Please enter a message before submitting.
+            </p>
+          </div>
+
+          <button class="form-button" type="submit">Send Message</button>
+        </form>
       </section>
     </div>
   </main>
