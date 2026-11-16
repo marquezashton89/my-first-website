@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashton Marquez | About</title>
+  <title>Ashton Marquez | About/Contact</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -166,6 +166,20 @@
           >
           <p class="error" id="email-error">
             Please enter a valid email address, such as name@example.com.
+          </p>
+        </div>
+
+        <div class="form-field">
+          <label for="subject">Subject <span>(required)</span></label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            aria-describedby="subject-error"
+          >
+          <p class="error" id="subject-error">
+            Please enter a subject for your message.
           </p>
         </div>
 
