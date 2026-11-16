@@ -1,32 +1,21 @@
 # my-first-website
+Ashton Marquez: Portfolio
+My portfolio site for DEV.140. Live site: https://marquezashton89.github.io/my-first-website/
+Accessibility fixes
 
-Proximity: I used spacing to group related contact details and separate them from the message form.
-Similarity: I repeated gold borders, rounded corners, and heading styles across sections to show they share the same design.
-Figure-ground: I used gold text and borders against a black background to make the page content stand out.
-
-WAVE results: The Home, Projects, and About pages each showed 0 errors when tested.
-Contrast results: WAVE’s contrast checker passed the text/background color combinations on the Home, Projects, and About pages.
-
-Webpage Fixes:
-
-Accessibility
-
-I added alt text to my photo so screen-reader users know what it shows.
-I added a label to each form field so people know what to enter.
-I put the reply choices in a group with a legend to explain what they are for.
-I connected each form error message to its field so users can find and understand the problem.
-I added focus styles so keyboard users can see what they are selecting.
+Added alt text to my About photo so screen-reader users know what it shows.
+Added a label to each contact form field so users know what information to enter.
+Grouped the reply choices in a fieldset with a legend so users understand what the choices are for.
+Connected each form error message to its field so users can find and understand the problem.
+Added keyboard focus styles so keyboard users can see which link or form control they selected.
 WAVE showed 0 errors on my Home, Projects, and About pages.
-WAVE’s contrast checker passed the text and background colors on all three pages.
+WAVE’s contrast checker passed the text and background color combinations on all three pages.
 
-Visual Design
+Design choices
 
-Proximity: I used space to keep related contact details together and separate them from the form.
+Proximity: I used space to group the contact details and separate them from the form.
 Similarity: I used the same gold borders, rounded corners, and heading styles across my sections.
 Figure-ground: I used gold text and borders on a black background so the content stands out.
 
-Color Palette
-
-Black (#000000) is my page background.
-Gold (#f5c542) is used for my main text, borders, headings, and buttons.
-Light gold (#ffe17a) is used for links and focus outlines.
+Color palette
+RoleHexUsed forBackground#000000Page backgroundPrimary#f5c542Main text, borders, headings, and buttonsLight gold#ffe17aLinks and keyboard focus outlines
