@@ -7,6 +7,8 @@ Figure-ground: I used gold text and borders against a black background to make t
 WAVE results: The Home, Projects, and About pages each showed 0 errors when tested.
 Contrast results: WAVE’s contrast checker passed the text/background color combinations on the Home, Projects, and About pages.
 
+Webpage Fixes:
+
 Accessibility
 
 I added alt text to my photo so screen-reader users know what it shows.
