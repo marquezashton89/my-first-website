@@ -13,6 +13,7 @@ Live site: https://marquezashton89.github.io/my-first-website/
 - Grouped the reply choices in a fieldset with a legend so users understand what the choices are for.
 - Connected each form error message to its field so users can find and understand the problem.
 - Added keyboard focus styles so keyboard users can see which link or form control they selected.
+- Added a required Subject field with a matching label and error message so visitors can tell what to enter and fix it if left blank.
 - WAVE showed 0 errors on my Home, Projects, and About pages.
 - WAVE’s contrast checker passed the text and background color combinations on all three pages.
 
