@@ -9,72 +9,85 @@
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
   <header id="site-header">
     <h1>Ashton Marquez</h1>
   </header>
-
   <nav class="main-nav" aria-label="Main navigation">
-    <ul>
-      <li>
-        <a href="index.html" aria-current="page">Home</a>
-      </li>
-      <li>
-        <a href="projects.html">Projects</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-      </li>
-    </ul>
-  </nav>
+    <button
+      class="menu-toggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="main-menu"
+    >
+      Menu
+    </button>
+<ul id="main-menu">
+  <li><a href="index.html" aria-current="page">Home</a></li>
+  <li><a href="projects.html">Projects</a></li>
+  <li><a href="about.html">About</a></li>
+</ul>
 
+  </nav>
   <main>
     <section class="intro-section">
       <h2>Building My Future in Cybersecurity &amp; IT</h2>
+  <div class="intro-layout">
+    <img
+      src="images/ashton.jpg"
+      alt="Ashton posing with a monkey"
+      width="170"
+    >
 
-      <div class="intro-layout">
-        <img
-          src="images/ashton.jpg"
-          alt="Ashton posing with a monkey"
-          width="170"
-        >
+    <p>
+      I’m Ashton, born and raised in Odessa, Texas. I’m a single mother
+      focused on learning IT and cybersecurity and building a strong
+      foundation for my future career. I enjoy learning new things,
+      reading fantasy and mythology, and spending time with my family.
+      I also love Italian food!
+    </p>
+  </div>
+</section>
 
-        <p>
-          I’m Ashton, born and raised in Odessa, Texas. I’m a mother
-          focused on learning IT and cybersecurity and building a strong
-          foundation for my future career. I enjoy learning new things,
-          reading fantasy and mythology, and spending time with my family.
-          I also love Italian food!
-        </p>
-      </div>
-    </section>
+<div class="content-grid">
+  <section>
+    <h2>Featured Project</h2>
+    <h3>Learning Web Development</h3>
 
-    <div class="content-grid">
-      <section>
-        <h2>Featured Project</h2>
-        <h3>Learning Web Development</h3>
+    <p>
+      I am learning how to build websites and understand the basics of
+      HTML, CSS, and JavaScript.
+    </p>
+  </section>
 
-        <p>
-          I am learning how to build websites and understand the basics of
-          HTML, CSS, and JavaScript.
-        </p>
-      </section>
+  <section class="highlights-card">
+    <button
+      class="form-button"
+      id="highlights-toggle"
+      type="button"
+      aria-expanded="true"
+      aria-controls="highlights"
+    >
+      Hide Highlights
+    </button>
 
-      <section>
-        <h2>Highlights</h2>
+    <div id="highlights">
+      <h2>Highlights</h2>
 
-        <ul>
-          <li>Interested in cybersecurity</li>
-          <li>Working toward becoming an IT specialist</li>
-          <li>Building foundational skills in IT</li>
-        </ul>
-      </section>
+      <ul>
+        <li>Interested in cybersecurity</li>
+        <li>Working toward becoming an IT specialist</li>
+        <li>Building foundational skills in IT</li>
+      </ul>
     </div>
-  </main>
+  </section>
+</div>
 
+  </main>
   <footer>
     <p>&copy; 2026 Ashton Marquez</p>
   </footer>
+  <script src="nav.js"></script>
+  <script src="form.js"></script>
 </body>
 </html>
